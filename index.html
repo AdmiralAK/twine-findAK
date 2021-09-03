@@ -19,10 +19,9 @@ You see a [[guide-&gt;First Floor Guide]]</tw-passagedata><tw-passagedata pid="2
 [[Ask where the cafeteria is-&gt;AskForCafeteria1]]
 [[Ask why parking costs so much-&gt;AskParkingCost1]]
 </tw-passagedata><tw-passagedata pid="3" name="AskForAK" tags="" position="250,475" size="100,100">The guide replies: I am not familiar with this &quot;AK&quot;.  
-(set:$department to (prompt: &quot;Do you know what department they work for?&quot;, &quot;enter department name&quot;))
-(if: $department is &quot;Applied Linguistics&quot;)[[[Go to McCormack 4th floor-&gt;GoTo4thMc]]]
+(set:$department to (prompt: &quot;Do you know what department they work for?&quot;, &quot;enter department name (no-caps)&quot;))
 (if: $department is &quot;applied linguistics&quot;)[[[Go to McCormack 4th floor-&gt;GoTo4thMc]]]
-(if:$department is not &quot;Applied Linguistics&quot;) [Sorry, I don&#39;t recognize that department. Are you sure? 
+(if:$department is not &quot;applied linguistics&quot;) [Sorry, I don&#39;t recognize that department. Are you sure? 
 [[Try again?-&gt;AskForAK]]
 [[Wonder around the Fifth Floor. That might be right...-&gt;GoTo5thMc]]
 ]
